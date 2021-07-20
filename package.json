@@ -1,6 +1,6 @@
 {
   "name": "osmosis-monitor",
-  "version": "1.0.0.",
+  "version": "1.0.0",
   "description": "Typescript monitoring for an Osmosis node with PagerDuty",
   "main": "index.js",
   "dependencies": {
