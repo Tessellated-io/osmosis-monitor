@@ -1,5 +1,10 @@
-const PagerDuty = require('node-pagerduty');
+import dotenv from "dotenv"
+const PagerDuty = require('node-pagerduty')
 import * as WebRequest from 'web-request'
+
+// Parse environment file.
+const envFile = process.env.ENV_FILE || ".env-mainnet"
+dotenv.config({ path: envFile })
 
 export const PAGER_DUTY_API_KEY_NAME = 'PAGER_DUTY_API_KEY'
 export const PAGER_DUTY_API_KEY = process.env[PAGER_DUTY_API_KEY_NAME] || ''
@@ -7,7 +12,7 @@ if (PAGER_DUTY_API_KEY === '') {
   throw new Error(`Private key envar ${PAGER_DUTY_API_KEY_NAME} must be set for operation!`)
 }
 
-export const PAGER_DUTY_API_SERVICE_NAME = 'PAGER_DUTY_API_SERVICE'
+export const PAGER_DUTY_API_SERVICE_NAME = 'PAGER_DUTY_SERVICE'
 export const PAGER_DUTY_SERVICE = process.env[PAGER_DUTY_API_SERVICE_NAME] || ''
 if (PAGER_DUTY_SERVICE === '') {
   throw new Error(`Private key envar ${PAGER_DUTY_API_SERVICE_NAME} must be set for operation!`)

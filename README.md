@@ -4,7 +4,7 @@ This service monitors an Osmosis Node and alerts you via PagerDuty.
 
 ## Usage
 
-Set the following env vars:
+Set the following env vars in a file called `.env-mainnet`. You can customize this file by setting an `ENV_FILE` environment variable.
 - `PAGER_DUTY_API_KEY`: Your PagerDuty API key
 - `PAGER_DUTY_SERVICE`: Your PagerDuty service identifier
 - `PAGER_DUTY_EMAIL`: Your PagerDuty email
