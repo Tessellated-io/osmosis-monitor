@@ -10,6 +10,21 @@ Set the following env vars in a file called `.env-mainnet`. You can customize th
 - `PAGER_DUTY_EMAIL`: Your PagerDuty email
 - `VALIDATOR_ADDRESS`: The validator address to monitor
 
+### Manual
+
+`./start.sh`
+
+### Systemd
+
+See `osmosis-monitor.service`
+
+### Docker
+
+```
+docker build -t osmosis-monitor .
+docker run osmosis-monitor
+```
+
 Starting:
 `./start.sh`
 
