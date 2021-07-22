@@ -31,7 +31,7 @@ if (VALIDATOR_ADDRESS === '') {
 }
 
 // RPC URL
-const API_URL = "http://127.0.0.1:/block"
+const API_URL = "http://127.0.0.1:26657/block"
 
 // Amount of seconds allowed to be out of date before paging
 const ACCEPTABLE_DELTA_SECS = 30
