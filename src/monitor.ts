@@ -83,7 +83,7 @@ const monitor = async () => {
       }
 
       // Tabulate consecutive misses
-      if (found = true) {
+      if (found == true) {
         consecutiveMisses = 0
       } else {
         console.log(`Missed sig in block ${apiData.block.header.height}`)
