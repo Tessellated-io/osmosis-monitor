@@ -74,7 +74,7 @@ const monitor = async () => {
 
       // Search through precommits and make sure the validator has signed.
       let found = false
-      const precommits = apiData.block.last_commit.signatures
+      const precommits = apiData.result.block.last_commit.signatures
       for (let i = 0; i < precommits.length; i++) {
         const precommit = precommits[i]
         if (precommit.validatorAddress === VALIDATOR_ADDRESS) {
