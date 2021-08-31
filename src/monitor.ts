@@ -34,7 +34,7 @@ if (VALIDATOR_ADDRESS === '') {
 const API_URL = "http://127.0.0.1:26657/block"
 
 // Amount of seconds allowed to be out of date before paging
-const ACCEPTABLE_DELTA_SECS = 30
+const ACCEPTABLE_DELTA_SECS = 20 * 60 // 20 min
 
 // Amount to not sign before paging
 const ACCEPTABLE_CONSECUTIVE_MISS = 5
